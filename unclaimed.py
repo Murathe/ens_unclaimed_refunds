@@ -30,3 +30,8 @@ def get_unclaimed_refunds():
                 logging.info(f"cunlaimed refund for {bidder_address}: {web3.fromWei(refund, 'ether')} ETH")
     except Exception as e:
         logging.error(f"kuna makosa imefanyika")
+
+
+if __name__ == "__main__":
+    get_unclaimed_refunds()
+    
